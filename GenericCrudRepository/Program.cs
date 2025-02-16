@@ -18,8 +18,7 @@ builder.Services.AddScoped<IRepository<Product>, ProductDataAccessor>();
 
 
 builder.Services.AddDbContext<ExampleDbContext>(options =>
-    options.UseMySql("server=localhost;database=exampledb;user=root;password=root", new MySqlServerVersion(new Version(9, 2, 0))
-);
+    options.UseMySql("server=localhost;database=exampledb;user=root;password=root", new MySqlServerVersion(new Version(9, 2, 0))));
 
 var app = builder.Build();
 
